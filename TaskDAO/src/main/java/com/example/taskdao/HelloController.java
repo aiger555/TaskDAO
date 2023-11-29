@@ -41,6 +41,7 @@ public class HelloController {
     private void initialize() {
         // Initialize the Priority ChoiceBox with enum values
         priorityChoiceBox.setItems(FXCollections.observableArrayList(Priority.values()));
+        refreshTaskListView();
     }
 
     @FXML
